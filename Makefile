@@ -28,7 +28,7 @@ linux: SPCPLAYERFILE = spcplayerlinux.c
 linux: spcplayer
 
 spcplayer: libopenspc.a $(SPCPLAYERFILE)
-	$(CC) $(CFLAGS) $(SPCPLAYERFILE) -o spcplayer libopenspc.a -lz
+	$(CC) $(CFLAGS) $(SPCPLAYERFILE) -o spcplayer libopenspc.a -L/usr/lib/i386-linux-gnu -lz
 
 
 #install: libopenspc.so openspc.h
